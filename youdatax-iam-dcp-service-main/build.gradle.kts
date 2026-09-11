@@ -1,3 +1,8 @@
+/*
+ * \extensions\common\iam\decentralized-claims\decentralized-claims-core
+ */
+
+
 plugins {
     `java-library`
     `maven-publish`
