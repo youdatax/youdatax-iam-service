@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.yospace.core</groupId>
-  <artifactId>yospace-ext-iam-dcp-service-issuers-configuration</artifactId>
+  <groupId>org.youdatax.iam</groupId>
+  <artifactId>youdatax-iam-dcp-service-issuers-configuration</artifactId>
   <version>0.0.3-SNAPSHOT</version>
   <name>yospace-ext-iam-decentralized-claims-issuers-configuration</name>
   <description>yospace-ext-iam-decentralized-claims-issuers-configuration</description>
