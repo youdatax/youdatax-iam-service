@@ -1,3 +1,8 @@
+/*
+ * \extensions\common\iam\decentralized-identity\identity-did-web
+ */
+
+
 plugins {
     `java-library`
     `java-test-fixtures`
