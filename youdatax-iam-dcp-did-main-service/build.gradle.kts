@@ -1,3 +1,7 @@
+/*
+ * \extensions\common\iam\decentralized-identity\identity-did-core
+ */
+
 plugins {
     `java-library`
 }
