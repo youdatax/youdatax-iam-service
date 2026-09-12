@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Amadeus - initial API and implementation
- *
+ * \extensions\common\iam\oauth2\oauth2-client
  */
 
 plugins {
