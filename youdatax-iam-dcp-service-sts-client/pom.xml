@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yospace.iam</groupId>
+  <artifactId>yospace-ext-iam-dcp-service-sts-client</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <name>yospace-ext-iam-decentralized-claims-sts-remote-client</name>
+  <description>yospace-ext-iam-decentralized-claims-sts-remote-client</description>
+  
+  <dependencies>
+<!--    api(project(":spi:common:decentralized-claims-spi"))-->
+      <dependency>
+        <groupId>com.yospace.iam</groupId>
+        <artifactId>yospace-iam-dcp-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>
+<!--    api(project(":spi:common:oauth2-spi"))-->
+      <dependency>
+        <groupId>com.yospace.iam</groupId>
+        <artifactId>yospace-iam-dcp-spi-oauth2-client</artifactId> 
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>    
+<!--    api(project(":spi:common:participant-context-config-spi"))-->
+      <dependency>
+        <groupId>com.yospace.participantcontext</groupId>
+        <artifactId>yospace-participant-context-spi-config</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>    
+<!--    api(project(":spi:common:jwt-spi"))-->
+       <dependency>
+        <groupId>com.yospace.core</groupId>
+        <artifactId>yospace-core-spi-jwt</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>   
+<!--    implementation(project(":extensions:common:iam:decentralized-claims:decentralized-claims-sts:lib:decentralized-claims-sts-remote-lib"))-->
+      <dependency>
+        <groupId>com.yospace.iam</groupId>
+        <artifactId>yospace-ext-iam-dcp-lib-sts-client</artifactId>  
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>
+      
+<!--    testImplementation(project(":core:common:junit"))-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+      </dependency>   
+  </dependencies>  
+</project>
