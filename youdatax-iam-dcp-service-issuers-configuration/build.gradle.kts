@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Bayerische Motoren Werke Aktiengesellschaft (BMW AG) - initial API and implementation
- *
+ * \extensions\common\iam\decentralized-claims\decentralized-claims-issuers-configuration
  */
 
 plugins {
