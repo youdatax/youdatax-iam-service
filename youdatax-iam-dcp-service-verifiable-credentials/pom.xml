@@ -1,49 +1,98 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.yospace.iam</groupId>
-  <artifactId>yospace-ext-iam-dcp-service-oauth2-client</artifactId>
+  <groupId>org.youdatax.iam</groupId>
+  <artifactId>youdatax-iam-dcp-service-verifiable-credentials</artifactId>
   <version>0.0.3-SNAPSHOT</version>
-  <name>yospace-ext-iam-oauth2-client</name>
-  <description>yospace-ext-iam-oauth2-client</description>
+  <name>yospace-ext-iam-verifiable-credentials</name>
+  <description>yospace-ext-iam-verifiable-credentials</description>
   
   <dependencies>
+<!--    api(project(":spi:common:verifiable-credentials-spi"))
+    api(project(":spi:common:http-spi"))
+    implementation(project(":spi:common:token-spi"))
+    implementation(project(":spi:common:identity-did-spi"))
+    implementation(project(":extensions:common:iam:decentralized-claims:lib:verifiable-credentials-lib"))
+    implementation(libs.jsonschema)
+
+    testImplementation(project(":core:common:junit-base"))
+    testImplementation(testFixtures(project(":spi:common:verifiable-credentials-spi")))  -->
+  
+<!--    api(project(":spi:common:verifiable-credentials-spi"))-->
+      <dependency>
+        <groupId>com.yospace.iam</groupId> 
+        <artifactId>yospace-iam-dcp-spi-verifiable-credentials</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>
 <!--    api(project(":spi:common:http-spi"))-->
       <dependency>
         <groupId>com.yospace.core</groupId>
         <artifactId>yospace-core-spi-http</artifactId>
         <version>0.0.3-SNAPSHOT</version>
-      </dependency>
-<!--    api(project(":spi:common:oauth2-spi"))-->
+      </dependency>    
+<!--    implementation(project(":spi:common:token-spi"))  -->    
+
+<!--    implementation(project(":spi:common:identity-did-spi"))-->
       <dependency>
         <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-iam-dcp-spi-oauth2-client</artifactId>
+        <artifactId>yospace-iam-dcp-did-spi</artifactId>
         <version>0.0.3-SNAPSHOT</version>
+      </dependency>   
+<!--    implementation(project(":extensions:common:iam:decentralized-claims:lib:verifiable-credentials-lib"))-->
+      <dependency>
+        <groupId>com.yospace.iam</groupId>
+        <artifactId>yospace-ext-iam-dcp-lib-verifiable-credentials</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>             
+<!--    implementation(project(":core:common:lib:util-lib"))
+      <dependency>
+        <groupId>com.yospace.common</groupId>
+        <artifactId>yospace-common-util-lib</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>    -->
+<!--    implementation(libs.jsonschema)
+jsonschema = { module = "com.networknt:json-schema-validator", version = "2.0.0" }-->
+      <dependency>
+        <groupId>com.networknt</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>2.0.0</version>
       </dependency>
       
-<!--    testImplementation(project(":core:common:lib:json-lib"))-->
-      <dependency>
-        <groupId>org.eclipse.edc</groupId>
-        <artifactId>json-lib</artifactId>
-        <version>0.18.0</version>
-      </dependency>    
-<!--    testImplementation(project(":core:common:lib:util-lib"))-->
-      <dependency>
-        <groupId>org.eclipse.edc</groupId>
-        <artifactId>util-lib</artifactId>
-        <version>0.18.0</version>
-      </dependency>    
-<!--    testImplementation(testFixtures(project(":core:common:lib:http-lib")))-->
-      <dependency>
-        <groupId>org.eclipse.edc</groupId>
-        <artifactId>http-lib</artifactId>
-        <version>0.18.0</version>
-      </dependency>    
 <!--    testImplementation(libs.wiremock)
 wiremock = { module = "org.wiremock:wiremock-jetty12", version.ref = "wiremock" }-->
       <dependency>
         <groupId>org.wiremock</groupId>
         <artifactId>wiremock-jetty12</artifactId>
         <version>3.13.2</version>
+      </dependency>    
+<!--    testImplementation(testFixtures(project(":spi:common:verifiable-credentials-spi")))
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>verifiable-credentials-spi</artifactId>
+        <version>0.15.1</version>
+      </dependency>    -->
+<!--    testImplementation(project(":tests:junit-base"))-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit-base</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    testImplementation(project(":core:common:lib:http-lib"))-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>http-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    testImplementation(project(":core:common:lib:util-lib"))
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>util-lib</artifactId>
+        <version>0.15.1</version>
+      </dependency>    -->
+<!--    testImplementation(testFixtures(project(":spi:common:decentralized-claims-spi"))) //test functions-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>decentralized-claims-spi</artifactId>
+        <version>0.18.0</version>
       </dependency>    
   </dependencies>  
 </project>

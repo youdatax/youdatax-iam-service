@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 2022 Amadeus
+ *  Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
  *
  *  This program and the accompanying materials are made available under the
  *  terms of the Apache License, Version 2.0 which is available at
@@ -8,22 +8,24 @@
  *  SPDX-License-Identifier: Apache-2.0
  *
  *  Contributors:
- *       Amadeus - initial API and implementation
- * \extensions\common\iam\oauth2\oauth2-client
+ *       Bayerische Motoren Werke Aktiengesellschaft (BMW AG) - initial API and implementation
+ * \extensions\common\iam\verifiable-credentials
  */
 
 plugins {
     `java-library`
+    `maven-publish`
 }
 
 dependencies {
+    api(project(":spi:common:verifiable-credentials-spi"))
     api(project(":spi:common:http-spi"))
-    api(project(":spi:common:oauth2-spi"))
+    implementation(project(":spi:common:token-spi"))
+    implementation(project(":spi:common:identity-did-spi"))
+    implementation(project(":extensions:common:iam:decentralized-claims:lib:verifiable-credentials-lib"))
+    implementation(libs.jsonschema)
 
-    testImplementation(project(":core:common:lib:json-lib"))
-    testImplementation(project(":core:common:lib:util-lib"))
-    testImplementation(testFixtures(project(":core:common:lib:http-lib")))
-    testImplementation(libs.wiremock)
+    testImplementation(project(":core:common:junit-base"))
+    testImplementation(testFixtures(project(":spi:common:verifiable-credentials-spi")))
 }
-
 

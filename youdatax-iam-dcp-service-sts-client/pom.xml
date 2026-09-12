@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.yospace.iam</groupId>
-  <artifactId>yospace-ext-iam-dcp-service-sts-client</artifactId>
+  <groupId>org.youdatax.iam</groupId>
+  <artifactId>youdatax-iam-dcp-service-sts-client</artifactId>
   <version>0.0.3-SNAPSHOT</version>
   <name>yospace-ext-iam-decentralized-claims-sts-remote-client</name>
   <description>yospace-ext-iam-decentralized-claims-sts-remote-client</description>
