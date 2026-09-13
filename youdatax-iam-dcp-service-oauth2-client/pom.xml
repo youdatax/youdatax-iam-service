@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youdatax.iam</groupId>
+  <artifactId>youdatax-iam-dcp-service-oauth2-client</artifactId>
+  <version>0.0.3.0</version>
+  <name>yospace-ext-iam-oauth2-client</name>
+  <description>yospace-ext-iam-oauth2-client</description>
+  
+  <dependencies>
+<!--    api(project(":spi:common:http-spi"))-->
+      <dependency>
+        <groupId>com.yospace.core</groupId>
+        <artifactId>yospace-core-spi-http</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>
+<!--    api(project(":spi:common:oauth2-spi"))-->
+      <dependency>
+        <groupId>com.yospace.iam</groupId>
+        <artifactId>yospace-iam-dcp-spi-oauth2-client</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>
+      
+<!--    testImplementation(project(":core:common:lib:json-lib"))-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    testImplementation(project(":core:common:lib:util-lib"))-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>util-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    testImplementation(testFixtures(project(":core:common:lib:http-lib")))-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>http-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    testImplementation(libs.wiremock)
+wiremock = { module = "org.wiremock:wiremock-jetty12", version.ref = "wiremock" }-->
+      <dependency>
+        <groupId>org.wiremock</groupId>
+        <artifactId>wiremock-jetty12</artifactId>
+        <version>3.13.2</version>
+      </dependency>    
+  </dependencies>  
+</project>

@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youdatax.iam</groupId>
+  <artifactId>yooudatax-iam-dcp-did-main-service</artifactId>
+  <version>0.0.3.0</version>
+  <name>yospace-ext-iam-decentralized-identity-did-core</name>
+  <description>yospace-ext-iam-decentralized-identity-did-core</description>
+  
+  <dependencies>
+<!--    api(project(":spi:common:identity-did-spi"))-->
+      <dependency>
+        <groupId>com.yospace.iam</groupId>
+        <artifactId>yospace-iam-dcp-did-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>
+<!--    implementation(project(":spi:common:keys-spi"))-->
+      <dependency>
+        <groupId>com.yospace.core</groupId>
+        <artifactId>yospace-core-spi-keys</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>    
+<!--    implementation(project(":core:common:lib:util-lib"))-->
+      <dependency>
+        <groupId>com.yospace.common</groupId>
+        <artifactId>yospace-common-util-lib</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>    
+<!--    implementation(project(":core:common:lib:keys-lib"))-->
+      <dependency>
+        <groupId>com.yospace.core</groupId>
+        <artifactId>yospace-core-lib-keys</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>
+<!--    implementation(libs.bouncyCastle.bcpkixJdk18on)
+bouncyCastle-bcpkixJdk18on = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle-jdk18on" }-->
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpkix-jdk18on</artifactId>
+        <version>1.82</version>
+      </dependency>
+      
+<!--    testImplementation(project(":tests:junit-base"));-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit-base</artifactId>
+        <version>0.18.0</version>
+      </dependency>   
+  </dependencies>  
+</project>
