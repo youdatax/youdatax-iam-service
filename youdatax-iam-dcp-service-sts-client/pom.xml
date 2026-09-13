@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youdatax.iam</groupId>
   <artifactId>youdatax-iam-dcp-service-sts-client</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>yospace-ext-iam-decentralized-claims-sts-remote-client</name>
   <description>yospace-ext-iam-decentralized-claims-sts-remote-client</description>
   

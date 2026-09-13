@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youdatax.iam</groupId>
   <artifactId>youdatax-iam-dcp-service-issuers-configuration</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>yospace-ext-iam-decentralized-claims-issuers-configuration</name>
   <description>yospace-ext-iam-decentralized-claims-issuers-configuration</description>
   

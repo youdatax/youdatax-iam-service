@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youdatax.iam</groupId>
   <artifactId>yooudatax-iam-dcp-did-main-service</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>yospace-ext-iam-decentralized-identity-did-core</name>
   <description>yospace-ext-iam-decentralized-identity-did-core</description>
   
