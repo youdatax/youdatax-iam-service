@@ -17,7 +17,7 @@
 //package org.eclipse.edc.iam.decentralizedclaims.core;
 package org.youdatax.iam.dcp;
 
-
+import org.eclipse.edc.iam.decentralizedclaims.core.DidConfigProvider;
 import org.eclipse.edc.iam.decentralizedclaims.core.discovery.DidDiscoveryUrlResolver;
 import org.eclipse.edc.iam.decentralizedclaims.core.validation.SelfIssueIdTokenValidationAction;
 import org.eclipse.edc.iam.decentralizedclaims.service.DcpIdentityService;
