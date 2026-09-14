@@ -12,8 +12,8 @@
  *       Cofinity-X - extract presentation request service
  *
  */
-
-package org.eclipse.edc.iam.decentralizedclaims.service;
+//package org.eclipse.edc.iam.decentralizedclaims.service;
+package com.yospace.iam.dcp.service;
 
 import org.eclipse.edc.iam.decentralizedclaims.spi.ClaimTokenCreatorFunction;
 import org.eclipse.edc.iam.decentralizedclaims.spi.PresentationRequestService;
