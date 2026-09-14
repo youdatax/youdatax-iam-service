@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Cofinity-X - initial API and implementation
- *
+ * \extensions\common\iam\decentralized-claims\lib\decentralized-claims-lib
  */
 
 plugins {
