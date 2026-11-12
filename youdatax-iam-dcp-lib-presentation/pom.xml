@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.yospace.iam</groupId>
   <artifactId>yospace-ext-iam-dcp-lib-presentation</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.4-SNAPSHOT</version>
   <name>yospace-extensions-iam-dcp-lib</name>
   <description>yospace-extensions-iam-dcp-lib</description>
   
