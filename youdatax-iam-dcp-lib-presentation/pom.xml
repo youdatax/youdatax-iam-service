@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.yospace.iam</groupId>
-  <artifactId>yospace-ext-iam-dcp-lib-presentation</artifactId>
+  <groupId>org.youdatax.iam</groupId>
+  <artifactId>youdatax-iam-dcp-lib-presentation</artifactId>
   <version>0.0.4-SNAPSHOT</version>
   <name>yospace-extensions-iam-dcp-lib</name>
   <description>yospace-extensions-iam-dcp-lib</description>
@@ -15,9 +15,9 @@
       </dependency>    
 <!--     api(project(":spi:common:jwt-spi"))   -->
       <dependency>
-        <groupId>com.yospace.core</groupId>
-        <artifactId>yospace-core-spi-jwt</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-spi-jwt</artifactId>
+        <version>0.0.3.0</version>
       </dependency>    
       
 <!--    testImplementation(project(":core:common:junit"))-->

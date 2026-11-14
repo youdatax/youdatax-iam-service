@@ -21,15 +21,15 @@
       </dependency>    
 <!--    api(project(":spi:common:participant-context-config-spi"))-->
       <dependency>
-        <groupId>com.yospace.participantcontext</groupId>
-        <artifactId>yospace-participant-context-spi-config</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.participant</groupId>
+        <artifactId>youdatax-participant-context-spi-config</artifactId>
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    api(project(":spi:common:jwt-spi"))-->
        <dependency>
-        <groupId>com.yospace.core</groupId>
-        <artifactId>yospace-core-spi-jwt</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-spi-jwt</artifactId>
+        <version>0.0.3.0</version>
       </dependency>   
 <!--    implementation(project(":extensions:common:iam:decentralized-claims:decentralized-claims-sts:lib:decentralized-claims-sts-remote-lib"))-->
       <dependency>

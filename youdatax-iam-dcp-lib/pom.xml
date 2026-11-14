@@ -21,21 +21,21 @@
       </dependency>   
 <!--    api(project(":spi:common:jwt-spi"))-->
        <dependency>
-        <groupId>com.yospace.core</groupId>
-        <artifactId>yospace-core-spi-jwt</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-spi-jwt</artifactId>
+        <version>0.0.3.0</version>
       </dependency>   
 <!--    api(project(":spi:common:token-spi"))-->
       <dependency>
-        <groupId>com.yospace.core</groupId>
-        <artifactId>yospace-core-spi-token</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-spi-token</artifactId>
+        <version>0.0.3.0</version>
       </dependency>
 <!--    implementation(project(":core:common:lib:util-lib"))-->
       <dependency>
-        <groupId>com.yospace.common</groupId>
-        <artifactId>yospace-common-util-lib</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-lib-util</artifactId>
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    implementation(libs.nimbus.jwt)
 nimbus-jwt = { module = "com.nimbusds:nimbus-jose-jwt", version.ref = "nimbus" }-->
