@@ -14,11 +14,13 @@
  *
  */
 
-package org.eclipse.edc.iam.decentralizedclaims.core;
+//package org.eclipse.edc.iam.decentralizedclaims.core;
+package org.youdatax.iam.dcp;
 
+import org.eclipse.edc.iam.decentralizedclaims.core.DidConfigProvider;
 import org.eclipse.edc.iam.decentralizedclaims.core.discovery.DidDiscoveryUrlResolver;
 import org.eclipse.edc.iam.decentralizedclaims.core.validation.SelfIssueIdTokenValidationAction;
-import org.eclipse.edc.iam.decentralizedclaims.service.DcpIdentityService;
+//import org.eclipse.edc.iam.decentralizedclaims.service.DcpIdentityService;
 import org.eclipse.edc.iam.decentralizedclaims.service.verification.MultiFormatPresentationVerifier;
 import org.eclipse.edc.iam.decentralizedclaims.spi.ClaimTokenCreatorFunction;
 import org.eclipse.edc.iam.decentralizedclaims.spi.DcpParticipantAgentServiceExtension;
@@ -60,6 +62,8 @@ import org.eclipse.edc.verifiablecredentials.jwt.rules.TokenNotNullRule;
 import org.eclipse.edc.verifiablecredentials.linkeddata.DidMethodResolver;
 import org.eclipse.edc.verifiablecredentials.linkeddata.LdpVerifier;
 
+import org.youdatax.iam.dcp.service.*;
+
 import java.net.URISyntaxException;
 import java.time.Clock;
 import java.util.concurrent.Executors;
@@ -71,7 +75,8 @@ import static org.eclipse.edc.spi.constants.CoreConstants.JSON_LD;
 import static org.eclipse.edc.verifiablecredentials.jwt.Constants.JWT_VC_TOKEN_CONTEXT;
 
 @Extension("DCP Core Extension")
-public class DcpCoreExtension implements ServiceExtension {
+//public class DcpCoreExtension implements ServiceExtension {
+public class DcpIamExtension implements ServiceExtension {		
 
     public static final String DCP_SELF_ISSUED_TOKEN_CONTEXT = "dcp-si";
     public static final String JSON_2020_SIGNATURE_SUITE = "JsonWebSignature2020";
@@ -188,6 +193,17 @@ public class DcpCoreExtension implements ServiceExtension {
         signatureSuiteRegistry.register(JSON_2020_SIGNATURE_SUITE, new Jws2020SignatureSuite(typeManager.getMapper(JSON_LD)));
     }
 
+//    @Provider
+//    public IdentityService createIdentityService(ServiceExtensionContext context) {
+//        var didConfigProvider = new DidConfigProvider(participantContextConfig, context.getMonitor());
+//        var validationAction = new SelfIssueIdTokenValidationAction(tokenValidationService, rulesRegistry, didPublicKeyResolver, didConfigProvider);
+//
+//        var credentialValidationService = new VerifiableCredentialValidationServiceImpl(createPresentationVerifier(context),
+//                trustedIssuerRegistry, revocationServiceRegistry, clock, typeManager.getMapper());
+//
+//        return new DcpIdentityService(secureTokenService, didConfigProvider, validationAction,
+//                presentationRequestService, claimTokenFunction, credentialValidationService);
+//    }
     @Provider
     public IdentityService createIdentityService(ServiceExtensionContext context) {
         var didConfigProvider = new DidConfigProvider(participantContextConfig, context.getMonitor());
@@ -196,9 +212,13 @@ public class DcpCoreExtension implements ServiceExtension {
         var credentialValidationService = new VerifiableCredentialValidationServiceImpl(createPresentationVerifier(context),
                 trustedIssuerRegistry, revocationServiceRegistry, clock, typeManager.getMapper());
 
-        return new DcpIdentityService(secureTokenService, didConfigProvider, validationAction,
-                presentationRequestService, claimTokenFunction, credentialValidationService);
-    }
+        
+        DcpIdentityHolderService holderService=new DcpIdentityHolderService(secureTokenService, didConfigProvider);
+        DcpIdentityVerifierService verifierService=new DcpIdentityVerifierService(didConfigProvider, validationAction,
+                presentationRequestService, claimTokenFunction, credentialValidationService); 	
+        
+        return new DcpIdentityService(holderService, verifierService);
+    }    
 
     @Provider
     public PresentationVerifier createPresentationVerifier(ServiceExtensionContext context) {

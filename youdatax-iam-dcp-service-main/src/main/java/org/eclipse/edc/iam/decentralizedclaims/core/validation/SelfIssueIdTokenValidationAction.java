@@ -30,7 +30,8 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.function.Function;
 
-import static org.eclipse.edc.iam.decentralizedclaims.core.DcpCoreExtension.DCP_SELF_ISSUED_TOKEN_CONTEXT;
+//import static org.eclipse.edc.iam.decentralizedclaims.core.DcpCoreExtension.DCP_SELF_ISSUED_TOKEN_CONTEXT;
+import static org.youdatax.iam.dcp.DcpIamExtension.DCP_SELF_ISSUED_TOKEN_CONTEXT;
 
 public class SelfIssueIdTokenValidationAction implements TokenValidationAction {
 

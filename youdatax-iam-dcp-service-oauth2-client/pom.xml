@@ -2,16 +2,16 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youdatax.iam</groupId>
   <artifactId>youdatax-iam-dcp-service-oauth2-client</artifactId>
-  <version>0.0.3.0</version>
+  <version>0.0.4.0</version>
   <name>yospace-ext-iam-oauth2-client</name>
   <description>yospace-ext-iam-oauth2-client</description>
   
   <dependencies>
 <!--    api(project(":spi:common:http-spi"))-->
       <dependency>
-        <groupId>com.yospace.core</groupId>
-        <artifactId>yospace-core-spi-http</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-spi-http</artifactId>
+        <version>0.0.3.0</version>
       </dependency>
 <!--    api(project(":spi:common:oauth2-spi"))-->
       <dependency>

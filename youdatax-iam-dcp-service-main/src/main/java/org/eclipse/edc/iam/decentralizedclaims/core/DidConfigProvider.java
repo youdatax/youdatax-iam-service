@@ -19,8 +19,10 @@ import org.eclipse.edc.spi.monitor.Monitor;
 
 import java.util.function.Function;
 
-import static org.eclipse.edc.iam.decentralizedclaims.core.DcpCoreExtension.DEPRECATED_ISSUER_ID_KEY;
-import static org.eclipse.edc.iam.decentralizedclaims.core.DcpCoreExtension.PARTICIPANT_DID;
+//import static org.eclipse.edc.iam.decentralizedclaims.core.DcpCoreExtension.DEPRECATED_ISSUER_ID_KEY;
+import static org.youdatax.iam.dcp.DcpIamExtension.DEPRECATED_ISSUER_ID_KEY;
+//import static org.eclipse.edc.iam.decentralizedclaims.core.DcpCoreExtension.PARTICIPANT_DID;
+import static org.youdatax.iam.dcp.DcpIamExtension.PARTICIPANT_DID;
 
 /**
  * Provide configured DID.
