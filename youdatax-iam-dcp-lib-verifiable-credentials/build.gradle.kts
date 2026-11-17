@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Think-it GmbH - initial API and implementation
- *
+ * \extensions\common\iam\decentralized-claims\lib\verifiable-credentials-lib
  */
 
 plugins {
