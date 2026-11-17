@@ -45,9 +45,9 @@
   
 <!--    api(project(":spi:common:decentralized-claims-spi"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-iam-dcp-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-spi</artifactId>
+        <version>0.0.4.0</version>
       </dependency>
 <!--    api(project(":spi:common:policy:request-policy-context-spi"))
       <dependency>
@@ -64,21 +64,21 @@
 
 <!--    api(project(":spi:control-plane:catalog-spi"))-->
       <dependency>
-        <groupId>com.yospace.controlplane</groupId>
-        <artifactId>yospace-control-plane-spi-catalog</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.controlp</groupId>
+        <artifactId>youdatax-control-plane-spi-catalog</artifactId>
+        <version>0.0.4.0</version>
       </dependency>  
 <!--    api(project(":spi:control-plane:contract-spi"))-->
       <dependency>
-        <groupId>com.yospace.controlplane</groupId>
-        <artifactId>yospace-control-plane-spi-contract</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.controlp</groupId>
+        <artifactId>youdatax-control-plane-spi-contract</artifactId>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    api(project(":spi:control-plane:transfer-spi"))-->
       <dependency>
-        <groupId>com.yospace.controlplane</groupId>
-        <artifactId>yospace-control-plane-spi-transfer</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.controlp</groupId>
+        <artifactId>youdatax-control-plane-spi-transfer</artifactId>
+        <version>0.0.4.0</version>
       </dependency>             
 <!--    implementation(project(":spi:common:json-ld-spi"))-->
        <dependency>
@@ -142,33 +142,33 @@
       </dependency>         
 <!--    implementation(project(":extensions:common:crypto:lib:jws2020-lib"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-ext-iam-lib-vc-jws2020</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-core-lib-vc-jws2020</artifactId> 
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    implementation(project(":extensions:common:crypto:jwt-verifiable-credentials"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId> 
-        <artifactId>yospace-ext-iam-lib-vc-jwt</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId> 
+        <artifactId>youdatax-iam-core-lib-vc-jwt</artifactId>
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    implementation(project(":extensions:common:crypto:ldp-verifiable-credentials"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-ext-iam-lib-vc-ldp</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-core-lib-vc-ldp</artifactId>
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    implementation(project(":extensions:common:iam:decentralized-claims:decentralized-claims-service"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-ext-iam-dcp-lib</artifactId>   
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-lib</artifactId>   
+        <version>0.0.5-SNAPSHOT</version>
       </dependency>    
 <!--    implementation(project(":extensions:common:iam:decentralized-claims:decentralized-claims-transform"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-ext-iam-dcp-lib-transform</artifactId>  
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-lib-transform</artifactId>  
+        <version>0.0.5-SNAPSHOT</version>
       </dependency>    
 <!--    implementation(project(":extensions:common:iam:decentralized-claims:decentralized-claims-sts:decentralized-claims-sts-remote-client"))
       <dependency>
@@ -178,9 +178,9 @@
       </dependency>   --> 
 <!--    implementation(project(":extensions:common:iam:decentralized-claims:lib:decentralized-claims-lib"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-ext-iam-dcp-lib-presentation</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-lib-presentation</artifactId>
+        <version>0.0.5-SNAPSHOT</version>
       </dependency>    
 <!--    implementation(project(":extensions:common:iam:verifiable-credentials"))
       <dependency>
@@ -190,9 +190,9 @@
       </dependency>  -->  
 <!--    implementation(project(":extensions:common:iam:decentralized-claims:lib:verifiable-credentials-lib"))   -->  
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-ext-iam-dcp-lib-verifiable-credentials</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-lib-verifiable-credentials</artifactId>
+        <version>0.0.5-SNAPSHOT</version>
       </dependency>       
 <!--    implementation(libs.nimbus.jwt)
 nimbus-jwt = { module = "com.nimbusds:nimbus-jose-jwt", version.ref = "nimbus" }-->

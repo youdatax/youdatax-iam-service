@@ -9,15 +9,15 @@
   <dependencies>
 <!--    api(project(":spi:common:decentralized-claims-spi"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-iam-dcp-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-spi</artifactId>
+        <version>0.0.4.0</version>
       </dependency>
 <!--    api(project(":spi:common:oauth2-spi"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-iam-dcp-spi-oauth2-client</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-spi-oauth2-client</artifactId> 
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    api(project(":spi:common:participant-context-config-spi"))-->
       <dependency>
@@ -33,9 +33,9 @@
       </dependency>   
 <!--    implementation(project(":extensions:common:iam:decentralized-claims:decentralized-claims-sts:lib:decentralized-claims-sts-remote-lib"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-ext-iam-dcp-lib-sts-client</artifactId>  
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-lib-sts-client</artifactId>  
+        <version>0.0.5-SNAPSHOT</version>
       </dependency>
       
 <!--    testImplementation(project(":core:common:junit"))-->

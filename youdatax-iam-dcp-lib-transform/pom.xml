@@ -9,22 +9,22 @@
   <dependencies>
 <!--      api(project(":spi:common:decentralized-claims-spi"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-iam-dcp-spi</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-spi</artifactId> 
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    api(project(":spi:common:json-ld-spi"))-->
       <dependency>
-        <groupId>com.yospace.core</groupId>
-        <artifactId>yospace-core-spi-json-ld</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-spi-json-ld</artifactId> 
+        <version>0.0.3.0</version>
       </dependency>    
 <!--    api(project(":spi:common:transform-spi"))
     api(project(":spi:common:transform-spi"))-->
       <dependency>
-        <groupId>com.yospace.core</groupId>
-        <artifactId>yospace-core-spi-transform</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.core</groupId>
+        <artifactId>youdatax-core-spi-transform</artifactId> 
+        <version>0.0.3.0</version>
       </dependency>    
 <!--    api(libs.nimbus.jwt)
 nimbus-jwt = { module = "com.nimbusds:nimbus-jose-jwt", version.ref = "nimbus" }-->

@@ -9,9 +9,9 @@
   <dependencies>
 <!--    api(project(":spi:common:identity-did-spi"))-->
       <dependency>
-        <groupId>com.yospace.iam</groupId>
-        <artifactId>yospace-iam-dcp-did-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youdatax.iam</groupId>
+        <artifactId>youdatax-iam-dcp-did-spi</artifactId>
+        <version>0.0.4.0</version>
       </dependency>
 <!--    api(project(":spi:common:http-spi"))-->
       <dependency>
