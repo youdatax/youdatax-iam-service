@@ -1,3 +1,7 @@
+/*
+ * \extensions\common\iam\decentralized-claims\decentralized-claims-sts\lib\decentralized-claims-sts-remote-lib
+ */
+
 plugins {
     `java-library`
     `maven-publish`
