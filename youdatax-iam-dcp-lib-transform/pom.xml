@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youdatax.iam</groupId>
   <artifactId>youdatax-iam-dcp-lib-transform</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.5-SNAPSHOT</version>
   <name>yospace-ext-iam-decentralized-claims-transform</name>
   <description>yospace-ext-iam-decentralized-claims-transform</description>
 
